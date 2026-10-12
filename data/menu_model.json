@@ -1,0 +1,291 @@
+{
+  "_comment": "麦当劳套餐体检模型 — 数据来自 mcd-mcp 的 query-meals / query-meal-detail 实测（门店 3390191）",
+  "name_map": {
+    "纯牛奶": "纯牛奶(盒装)",
+    "黄金橙橙": "美汁源黄金橙橙",
+    "那么大鸡排（椒盐风味）": "那么大鸡排",
+    "5块心形薯饼+韩式辣椒黄油风味酱": null,
+    "多汁柠柠": null
+  },
+  "pools": {
+    "breakfast_sides": [
+      ["脆薯饼", 0],
+      ["脆香油条", 0],
+      ["德式图林根香肠", 1.5]
+    ],
+    "breakfast_drinks": [
+      ["鲜萃冰咖", 0],
+      ["大杯鲜萃咖啡", 0],
+      ["优品豆浆大杯", 0],
+      ["阳光柠檬红茶大杯", 0],
+      ["多汁柠柠", 0],
+      ["黄金橙橙", 1],
+      ["100%苹果汁", -0.5],
+      ["纯牛奶", -1.5],
+      ["锡兰红茶", -1],
+      ["阳光柠檬红茶中杯", -2],
+      ["大杯怡泉+C", 1.5],
+      ["可乐大杯", 0],
+      ["无糖可口可乐大杯", 0],
+      ["雪碧大杯", 0],
+      ["中杯怡泉+C", -0.5],
+      ["可乐中杯", -2],
+      ["无糖可口可乐中杯", -2],
+      ["雪碧中杯", -2]
+    ],
+    "regular_sides": [
+      ["中薯条", 0],
+      ["5块心形薯饼+韩式辣椒黄油风味酱", 1],
+      ["大薯条", 2],
+      ["小杯玉米杯", -1],
+      ["大杯玉米杯", 1.5],
+      ["脆脆薯条", 2]
+    ],
+    "regular_drinks": [
+      ["可乐中杯", 0],
+      ["多汁柠柠", 1],
+      ["无糖可口可乐中杯", 0],
+      ["雪碧中杯", 0],
+      ["阳光柠檬红茶中杯", 0],
+      ["纯牛奶", 0.5],
+      ["鲜萃冰咖", 2],
+      ["大杯鲜萃咖啡", 2],
+      ["可乐大杯", 2],
+      ["无糖可口可乐大杯", 2],
+      ["大杯怡泉+C", 3.5],
+      ["雪碧大杯", 2],
+      ["黄金橙橙", 3],
+      ["锡兰红茶", 1],
+      ["阳光柠檬红茶大杯", 2],
+      ["100%苹果汁", 1.5],
+      ["中杯怡泉+C", 1.5]
+    ],
+    "sxs_blue": [
+      ["双层吉士汉堡", 0],
+      ["高达吉士双牛堡", -1],
+      ["麦香鱼", 0],
+      ["那么大鸡排（椒盐风味）", -1],
+      ["酥酥多笋卷", -1],
+      ["麦乐鸡5块", -1],
+      ["麦香鸡", -1],
+      ["小薯条", -1]
+    ],
+    "sxs_pink": [
+      ["可乐麦炫酷", 0],
+      ["阳光柠檬红茶中杯", 0],
+      ["可乐中杯", 0],
+      ["怡泉+C麦炫酷", 0],
+      ["小杯玉米杯", 0],
+      ["香芋派", 0],
+      ["迷你草莓新地", 0],
+      ["迷你朱古力新地", 0],
+      ["鲜萃冰咖", 0],
+      ["菠萝派", 0],
+      ["雪碧麦炫酷", 0],
+      ["无糖可乐麦炫酷", 0],
+      ["锡兰红茶", 0],
+      ["中杯怡泉+C", 0],
+      ["雪碧中杯", 0],
+      ["无糖可口可乐中杯", 0]
+    ]
+  },
+  "combos": [
+    {
+      "name": "猪柳蛋麦满分套餐",
+      "code": "9900003458",
+      "meal": "breakfast",
+      "price": 15.9,
+      "rounds": [
+        {"label": "主食", "name": "猪柳蛋麦满分"},
+        {"label": "小食", "pool": "breakfast_sides", "default": "脆薯饼"},
+        {"label": "饮料", "pool": "breakfast_drinks", "default": "鲜萃冰咖"}
+      ]
+    },
+    {
+      "name": "原味板烧鸡腿麦满分套餐",
+      "code": "9900003457",
+      "meal": "breakfast",
+      "price": 14.1,
+      "rounds": [
+        {"label": "主食", "name": "原味板烧鸡腿麦满分"},
+        {"label": "小食", "pool": "breakfast_sides", "default": "脆薯饼"},
+        {"label": "饮料", "pool": "breakfast_drinks", "default": "鲜萃冰咖"}
+      ]
+    },
+    {
+      "name": "大脆鸡扒麦满分套餐",
+      "code": "9900003451",
+      "meal": "breakfast",
+      "price": 11.4,
+      "rounds": [
+        {"label": "主食", "name": "大脆鸡扒麦满分"},
+        {"label": "小食", "pool": "breakfast_sides", "default": "脆薯饼"},
+        {"label": "饮料", "pool": "breakfast_drinks", "default": "鲜萃冰咖"}
+      ]
+    },
+    {
+      "name": "火腿扒麦满分套餐",
+      "code": "9900003449",
+      "meal": "breakfast",
+      "price": 11.1,
+      "rounds": [
+        {"label": "主食", "name": "火腿扒麦满分"},
+        {"label": "小食", "pool": "breakfast_sides", "default": "脆薯饼"},
+        {"label": "饮料", "pool": "breakfast_drinks", "default": "鲜萃冰咖"}
+      ]
+    },
+    {
+      "name": "猪柳麦满分套餐",
+      "code": "9900003454",
+      "meal": "breakfast",
+      "price": 13.8,
+      "rounds": [
+        {"label": "主食", "name": "猪柳麦满分"},
+        {"label": "小食", "pool": "breakfast_sides", "default": "脆薯饼"},
+        {"label": "饮料", "pool": "breakfast_drinks", "default": "鲜萃冰咖"}
+      ]
+    },
+    {
+      "name": "双层原味板烧鸡腿麦满分套餐",
+      "code": "9900003459",
+      "meal": "breakfast",
+      "price": 16.5,
+      "rounds": [
+        {"label": "主食", "name": "双层原味板烧鸡腿麦满分"},
+        {"label": "小食", "pool": "breakfast_sides", "default": "脆薯饼"},
+        {"label": "饮料", "pool": "breakfast_drinks", "default": "鲜萃冰咖"}
+      ]
+    },
+    {
+      "name": "巨无霸三件套",
+      "code": "9900005466",
+      "meal": "regular",
+      "price": 37.5,
+      "rounds": [
+        {"label": "主食", "name": "巨无霸"},
+        {"label": "小食", "pool": "regular_sides", "default": "中薯条"},
+        {"label": "饮料", "pool": "regular_drinks", "default": "可乐中杯"}
+      ]
+    },
+    {
+      "name": "麦辣鸡腿汉堡三件套",
+      "code": "9900005456",
+      "meal": "regular",
+      "price": 33.5,
+      "rounds": [
+        {"label": "主食", "name": "麦辣鸡腿汉堡"},
+        {"label": "小食", "pool": "regular_sides", "default": "中薯条"},
+        {"label": "饮料", "pool": "regular_drinks", "default": "可乐中杯"}
+      ]
+    },
+    {
+      "name": "板烧鸡腿堡三件套",
+      "code": "9900005462",
+      "meal": "regular",
+      "price": 34.5,
+      "rounds": [
+        {"label": "主食", "name": "板烧鸡腿堡"},
+        {"label": "小食", "pool": "regular_sides", "default": "中薯条"},
+        {"label": "饮料", "pool": "regular_drinks", "default": "可乐中杯"}
+      ]
+    },
+    {
+      "name": "麦香鱼套餐",
+      "code": "9900005460",
+      "meal": "regular",
+      "price": 33,
+      "rounds": [
+        {"label": "主食", "name": "麦香鱼"},
+        {"label": "小食", "pool": "regular_sides", "default": "中薯条"},
+        {"label": "饮料", "pool": "regular_drinks", "default": "可乐中杯"}
+      ]
+    },
+    {
+      "name": "麦香鸡套餐",
+      "code": "9900005453",
+      "meal": "regular",
+      "price": 27.5,
+      "rounds": [
+        {"label": "主食", "name": "麦香鸡"},
+        {"label": "小食", "pool": "regular_sides", "default": "中薯条"},
+        {"label": "饮料", "pool": "regular_drinks", "default": "可乐中杯"}
+      ]
+    },
+    {
+      "name": "双层吉士汉堡套餐",
+      "code": "9900005464",
+      "meal": "regular",
+      "price": 34,
+      "rounds": [
+        {"label": "主食", "name": "双层吉士汉堡"},
+        {"label": "小食", "pool": "regular_sides", "default": "中薯条"},
+        {"label": "饮料", "pool": "regular_drinks", "default": "可乐中杯"}
+      ]
+    },
+    {
+      "name": "吉士汉堡包套餐",
+      "code": "9900005449",
+      "meal": "regular",
+      "price": 26.5,
+      "rounds": [
+        {"label": "主食", "name": "吉士汉堡包"},
+        {"label": "小食", "pool": "regular_sides", "default": "中薯条"},
+        {"label": "饮料", "pool": "regular_drinks", "default": "可乐中杯"}
+      ]
+    },
+    {
+      "name": "培根蔬萃双层牛堡三件套",
+      "code": "9900005468",
+      "meal": "regular",
+      "price": 35.5,
+      "rounds": [
+        {"label": "主食", "name": "培根蔬萃双层牛堡"},
+        {"label": "小食", "pool": "regular_sides", "default": "中薯条"},
+        {"label": "饮料", "pool": "regular_drinks", "default": "可乐中杯"}
+      ]
+    },
+    {
+      "name": "不素之霸双层牛堡三件套",
+      "code": "9900005411",
+      "meal": "regular",
+      "price": 36.5,
+      "rounds": [
+        {"label": "主食", "name": "不素之霸双层牛堡"},
+        {"label": "小食", "pool": "regular_sides", "default": "中薯条"},
+        {"label": "饮料", "pool": "regular_drinks", "default": "可乐中杯"}
+      ]
+    },
+    {
+      "name": "双层深海鳕鱼堡三件套",
+      "code": "9900005413",
+      "meal": "regular",
+      "price": 35,
+      "rounds": [
+        {"label": "主食", "name": "双层深海鳕鱼堡"},
+        {"label": "小食", "pool": "regular_sides", "default": "中薯条"},
+        {"label": "饮料", "pool": "regular_drinks", "default": "可乐中杯"}
+      ]
+    },
+    {
+      "name": "酥酥多笋卷三件套",
+      "code": "9900015008",
+      "meal": "regular",
+      "price": 31.5,
+      "rounds": [
+        {"label": "主食", "name": "酥酥多笋卷"},
+        {"label": "小食", "pool": "regular_sides", "default": "中薯条"},
+        {"label": "饮料", "pool": "regular_drinks", "default": "可乐中杯"}
+      ]
+    },
+    {
+      "name": "人气经典随心配（1+1）",
+      "code": "9900013304",
+      "meal": "regular",
+      "price": 14.9,
+      "rounds": [
+        {"label": "蓝区", "pool": "sxs_blue", "default": "双层吉士汉堡"},
+        {"label": "粉区", "pool": "sxs_pink", "default": "可乐麦炫酷"}
+      ]
+    }
+  ]
+}
